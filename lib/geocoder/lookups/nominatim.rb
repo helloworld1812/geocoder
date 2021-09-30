@@ -26,7 +26,8 @@ module Geocoder::Lookup
     def use_ssl?
       # nominatim.openstreetmap.org redirects HTTP requests to HTTPS
       if configured_host == "nominatim.openstreetmap.org"
-        true
+        # true
+        false
       else
         super
       end
